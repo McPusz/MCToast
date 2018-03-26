@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
 
 #3
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 #4
   s.author             = "Magdalena Pałka"
