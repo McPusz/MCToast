@@ -18,7 +18,7 @@ open class MCToast {
     private var view: MCToastView = MCToastView()
     private let animationDuration = 0.3
     
-    init(text: String?) {
+    public init(text: String?) {
         self.text = text
         self.show()
     }

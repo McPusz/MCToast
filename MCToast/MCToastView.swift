@@ -17,7 +17,7 @@ open class MCToastView: UIView {
         set { self.textLabel.text = newValue }
     }
     
-    override open var backgroundColor: UIColor? {
+    open var baseColor: UIColor? {
         get { return self.backgroundColor }
         set { self.backgroundColor = newValue }
     }
@@ -47,7 +47,7 @@ open class MCToastView: UIView {
     public init() {
         super.init(frame: .zero)
         self.addSubview(textLabel)
-        self.backgroundColor = .red
+        self.baseColor = .red
     }
     
     public required init?(coder aDecoder: NSCoder) {
