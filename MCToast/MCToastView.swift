@@ -32,7 +32,7 @@ open class MCToastView: UIView {
         set { self.layer.cornerRadius = newValue }
     }
 
-    //MARK: UIComponents
+
     private let textLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
@@ -55,30 +55,27 @@ open class MCToastView: UIView {
     }
     
     open override func layoutSubviews() {
-        super.layoutSubviews()
-        let screenSize = UIScreen.main.bounds
-        let widthMultiplier: CGFloat = 9/10
-        let toastWidth: CGFloat = screenSize.width * widthMultiplier
-        let toastHeight: CGFloat = CGFloat.greatestFiniteMagnitude
+        self.setConstraints()
+    }
+
+    private func setConstraints() {
+        let margin: CGFloat = 15
+        let textInset: CGFloat = 6
+        guard let superview = self.superview else { return }
         
-        let toastSize: CGSize = CGSize(
-            width: toastWidth,
-            height: toastHeight)
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.textLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        let textFrame = self.textLabel.sizeThatFits(toastSize)
+        [self.leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: margin),
+         self.trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: -margin),
+         self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -margin)
+            ].forEach{ $0.isActive = true }
         
-        self.textLabel.frame = CGRect(
-            x: self.textInsets.left,
-            y: self.textInsets.top,
-            width: textFrame.width,
-            height: textFrame.height)
+        [textLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: textInset),
+         textLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -textInset),
+         textLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: margin),
+         textLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -margin)
+            ].forEach { $0.isActive = true }
         
-        let totalFrame = CGRect(
-            x: textInsets.left,
-            y: textFrame.height + 2*textInsets.top,
-            width: toastWidth,
-            height: textFrame.height + 2*textInsets.top)
-        
-        self.frame = totalFrame
     }
 }

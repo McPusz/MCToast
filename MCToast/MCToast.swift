@@ -15,7 +15,7 @@ open class MCToast {
         set { self.view.text = newValue }
     }
     
-    private var view: MCToastView = MCToastView()
+    open var view: MCToastView = MCToastView()
     private let animationDuration = 0.3
     
     public init(text: String?) {
@@ -24,13 +24,12 @@ open class MCToast {
     }
 
     open func show() {
-        //add subview
         let appDelegate = UIApplication.shared.delegate
         let rootView = appDelegate?.window??.rootViewController?.view
         rootView?.addSubview(view)
         
         UIView.animate(withDuration: self.animationDuration, delay: 0, options: .curveEaseIn, animations: {
-            self.view.frame.origin.y = self.view.frame.height
+            self.view.frame.origin.y += self.view.bounds.height
         }, completion: nil)
     }
     

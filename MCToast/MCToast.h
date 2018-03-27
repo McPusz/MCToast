@@ -10,6 +10,3 @@
 
 FOUNDATION_EXPORT double MCToastVersionNumber;
 FOUNDATION_EXPORT const unsigned char MCToastVersionString[];
-
-
-/Users/Magda/Projects/MCToast/MCToast.podspec
