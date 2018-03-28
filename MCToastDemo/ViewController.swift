@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     private let toastButton = UIButton()
     private let hideButton = UIButton()
     private let appearanceButton = UIButton()
-    private let toast = MCToast(text: "Hello")
+    private let toast = MCToast(text: "Hello, you fool, I love you")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +80,37 @@ class ViewController: UIViewController {
     
     @objc
     private func randomizeToast() {
-        print("randomize")
+        //BackgroundColor
+        let colorList = [
+        UIColor(red:0.31, green:0.32, blue:0.31, alpha:1.0),
+        UIColor(red:0.95, green:0.37, blue:0.36, alpha:1.0),
+        UIColor(red:1.00, green:0.88, blue:0.40, alpha:1.0),
+        UIColor(red:0.14, green:0.48, blue:0.63, alpha:1.0),
+        UIColor(red:0.44, green:0.76, blue:0.70, alpha:1.0)
+        ]
+        toast.view.baseColor = randomFrom(list: colorList)
+        
+        //CornerRadius between 0 and circle (toastHeight/2)
+        let maxRadius = Int(toast.view.bounds.height/2)
+        let randomCornerRadius = Int(arc4random_uniform(UInt32(maxRadius)))
+        toast.view.cornerRadius = CGFloat(randomCornerRadius)
+        
+        //TextColor
+        let textColors = [
+            .white,
+            UIColor(red:0.52, green:0.86, blue:0.78, alpha:1.0),
+            UIColor(red:0.65, green:1.00, blue:0.84, alpha:1.0),
+            UIColor(red:1.00, green:0.65, blue:0.62, alpha:1.0),
+            UIColor(red:1.00, green:0.41, blue:0.42, alpha:1.0)
+        ]
+        toast.view.textColor = randomFrom(list: textColors)
+        
+        toast.show()
+    }
+    
+    private func randomFrom<T>(list: [T]) -> T {
+        let randomIndex = Int(arc4random_uniform(UInt32(list.count)))
+        return list[randomIndex]
     }
 }
 

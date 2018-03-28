@@ -24,7 +24,7 @@ open class MCToastView: UIView {
     
     open var textColor: UIColor {
         get { return self.textLabel.textColor }
-        set { self.textColor = newValue }
+        set { self.textLabel.textColor = newValue }
     }
     
     open var cornerRadius: CGFloat {
