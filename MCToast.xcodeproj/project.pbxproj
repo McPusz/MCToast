@@ -10,7 +10,38 @@
 		954FD9DC20625C3D006A195E /* MCToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 954FD9DA20625C3D006A195E /* MCToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95E4B89D20626ABA00ECA1EE /* MCToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4B89C20626ABA00ECA1EE /* MCToast.swift */; };
 		95E4B8A120626B3C00ECA1EE /* MCToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4B8A020626B3C00ECA1EE /* MCToastView.swift */; };
+		95E4B8B0206A473900ECA1EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4B8AF206A473900ECA1EE /* AppDelegate.swift */; };
+		95E4B8B2206A473900ECA1EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E4B8B1206A473900ECA1EE /* ViewController.swift */; };
+		95E4B8B5206A473900ECA1EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E4B8B3206A473900ECA1EE /* Main.storyboard */; };
+		95E4B8B7206A473B00ECA1EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E4B8B6206A473B00ECA1EE /* Assets.xcassets */; };
+		95E4B8BA206A473B00ECA1EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E4B8B8206A473B00ECA1EE /* LaunchScreen.storyboard */; };
+		95E4B8BF206A7B3A00ECA1EE /* MCToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954FD9D720625C3D006A195E /* MCToast.framework */; };
+		95E4B8C0206A7B3A00ECA1EE /* MCToast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 954FD9D720625C3D006A195E /* MCToast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95E4B8C1206A7B3A00ECA1EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 954FD9CE20625C3D006A195E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 954FD9D620625C3D006A195E;
+			remoteInfo = MCToast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95E4B8C3206A7B3B00ECA1EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95E4B8C0206A7B3A00ECA1EE /* MCToast.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		954FD9D720625C3D006A195E /* MCToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MCToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +49,13 @@
 		954FD9DB20625C3D006A195E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95E4B89C20626ABA00ECA1EE /* MCToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCToast.swift; sourceTree = "<group>"; };
 		95E4B8A020626B3C00ECA1EE /* MCToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCToastView.swift; sourceTree = "<group>"; };
+		95E4B8AD206A473900ECA1EE /* MCToastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCToastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E4B8AF206A473900ECA1EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95E4B8B1206A473900ECA1EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95E4B8B4206A473900ECA1EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95E4B8B6206A473B00ECA1EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95E4B8B9206A473B00ECA1EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95E4B8BB206A473B00ECA1EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +66,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95E4B8AA206A473900ECA1EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E4B8BF206A7B3A00ECA1EE /* MCToast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -35,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				954FD9D920625C3D006A195E /* MCToast */,
+				95E4B8AE206A473900ECA1EE /* MCToastDemo */,
 				954FD9D820625C3D006A195E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				954FD9D720625C3D006A195E /* MCToast.framework */,
+				95E4B8AD206A473900ECA1EE /* MCToastDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +112,19 @@
 				954FD9DB20625C3D006A195E /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		95E4B8AE206A473900ECA1EE /* MCToastDemo */ = {
+			isa = PBXGroup;
+			children = (
+				95E4B8AF206A473900ECA1EE /* AppDelegate.swift */,
+				95E4B8B1206A473900ECA1EE /* ViewController.swift */,
+				95E4B8B3206A473900ECA1EE /* Main.storyboard */,
+				95E4B8B6206A473B00ECA1EE /* Assets.xcassets */,
+				95E4B8B8206A473B00ECA1EE /* LaunchScreen.storyboard */,
+				95E4B8BB206A473B00ECA1EE /* Info.plist */,
+			);
+			path = MCToastDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,18 +159,41 @@
 			productReference = 954FD9D720625C3D006A195E /* MCToast.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		95E4B8AC206A473900ECA1EE /* MCToastDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E4B8BC206A473B00ECA1EE /* Build configuration list for PBXNativeTarget "MCToastDemo" */;
+			buildPhases = (
+				95E4B8A9206A473900ECA1EE /* Sources */,
+				95E4B8AA206A473900ECA1EE /* Frameworks */,
+				95E4B8AB206A473900ECA1EE /* Resources */,
+				95E4B8C3206A7B3B00ECA1EE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95E4B8C2206A7B3A00ECA1EE /* PBXTargetDependency */,
+			);
+			name = MCToastDemo;
+			productName = MCToastDemo;
+			productReference = 95E4B8AD206A473900ECA1EE /* MCToastDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		954FD9CE20625C3D006A195E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = McPusz;
 				TargetAttributes = {
 					954FD9D620625C3D006A195E = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
+					};
+					95E4B8AC206A473900ECA1EE = {
+						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
@@ -119,6 +203,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 954FD9CD20625C3D006A195E;
 			productRefGroup = 954FD9D820625C3D006A195E /* Products */;
@@ -126,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				954FD9D620625C3D006A195E /* MCToast */,
+				95E4B8AC206A473900ECA1EE /* MCToastDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +221,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E4B8AB206A473900ECA1EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E4B8BA206A473B00ECA1EE /* LaunchScreen.storyboard in Resources */,
+				95E4B8B7206A473B00ECA1EE /* Assets.xcassets in Resources */,
+				95E4B8B5206A473900ECA1EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +246,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95E4B8A9206A473900ECA1EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E4B8B2206A473900ECA1EE /* ViewController.swift in Sources */,
+				95E4B8B0206A473900ECA1EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95E4B8C2206A7B3A00ECA1EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 954FD9D620625C3D006A195E /* MCToast */;
+			targetProxy = 95E4B8C1206A7B3A00ECA1EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95E4B8B3206A473900ECA1EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E4B8B4206A473900ECA1EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95E4B8B8206A473B00ECA1EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E4B8B9206A473B00ECA1EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		954FD9DD20625C3D006A195E /* Debug */ = {
@@ -283,7 +415,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MCToast/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MCToast/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,7 +442,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MCToast/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MCToast/SupportingFiles/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,6 +452,44 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.mcpusz.MCToast;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95E4B8BD206A473B00ECA1EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R293VXYL28;
+				INFOPLIST_FILE = MCToastDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mcpusz.MCToastDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95E4B8BE206A473B00ECA1EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R293VXYL28;
+				INFOPLIST_FILE = MCToastDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.mcpusz.MCToastDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -342,6 +512,15 @@
 			buildConfigurations = (
 				954FD9E020625C3D006A195E /* Debug */,
 				954FD9E120625C3D006A195E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E4B8BC206A473B00ECA1EE /* Build configuration list for PBXNativeTarget "MCToastDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E4B8BD206A473B00ECA1EE /* Debug */,
+				95E4B8BE206A473B00ECA1EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

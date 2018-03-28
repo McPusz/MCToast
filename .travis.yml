@@ -1,0 +1,6 @@
+language: swift
+osx_image: xcode9.2
+xcode_project: MCToast.xcodeproj
+xcode_scheme: MCToast
+
+
